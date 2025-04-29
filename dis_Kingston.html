@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Catálogo de Discos Kingston</title>
+  <link rel="stylesheet" href="logotipo.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f0f8ff;
+    }
+    .menu-header {
+      background-color: #004080;
+      padding: 12px;
+      text-align: center;
+    }
+    .menu-header a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    .menu-header a:hover {
+      text-decoration: underline;
+    }
+    header {
+      padding: 40px 0 20px;
+      text-align: center;
+      font-size: 2.2rem;
+      color: #004080;
+    }
+    .catalog {
+      width: 90%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding-bottom: 50px;
+    }
+    .product {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      display: flex;
+      overflow: hidden;
+      transition: box-shadow 0.3s;
+    }
+    .product:hover {
+      box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    }
+    .product img {
+      width: 200px;
+      object-fit: cover;
+      background: #e6f0ff;
+    }
+    .info {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex: 1;
+    }
+    .info h2 {
+      margin: 0;
+      color: #003366;
+      font-size: 1.6rem;
+    }
+    .info p {
+      margin: 10px 0;
+      color: #555;
+    }
+    .info .price {
+      color: #0066cc;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+    .btn-more {
+      align-self: flex-start;
+      background: #0066cc;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      margin-top: 15px;
+      cursor: pointer;
+      transition: background 0.3s;
+      border-radius: 5px;
+    }
+    .btn-more:hover {
+      background: #004080;
+    }
+    .details {
+      display: none;
+      padding: 15px 20px;
+      background: #e6f0ff;
+      color: #333;
+      border-top: 1px solid #b3d1ff;
+    }
+    .details ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    .details ul li {
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="menu-header">
+  <a href="página2.html">Menú</a>
+  <a href="correo.html">Contáctenos</a>
+</div>
+
+<header>Catálogo de Discos Duros Kingston</header>
+
+<div class="catalog">
+
+  <div class="product">
+    <img src="1k.webp" alt="Kingston A400 240GB">
+    <div class="info">
+      <h2>Kingston A400 240GB</h2>
+      <p>SSD rápido para mejorar el rendimiento de tu computadora.</p>
+      <div class="price">$20 - $30 USD</div>
+      <button class="btn-more" onclick="toggleDetails(this)">Ver más</button>
+      <div class="details">
+        <ul>
+          <li>Velocidades de lectura de hasta 500 MB/s</li>
+          <li>Ideal para laptops y PCs de escritorio</li>
+          <li>Resistente a golpes y vibraciones</li>
+          <li>Formato 2.5 pulgadas</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <img src="2k.jpg" alt="Kingston NV1 500GB NVMe">
+    <div class="info">
+      <h2>Kingston NV1 500GB NVMe</h2>
+      <p>Rendimiento NVMe para cargas y transferencias rápidas.</p>
+      <div class="price">$35 - $45 USD</div>
+      <button class="btn-more" onclick="toggleDetails(this)">Ver más</button>
+      <div class="details">
+        <ul>
+          <li>Lectura de hasta 2100 MB/s</li>
+          <li>Diseño compacto M.2 2280</li>
+          <li>Bajo consumo de energía</li>
+          <li>Ideal para sistemas con espacio limitado</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <img src="3k.jpg" alt="Kingston KC3000 1TB PCIe 4.0">
+    <div class="info">
+      <h2>Kingston KC3000 1TB PCIe 4.0</h2>
+      <p>SSD ultrarrápido para usuarios exigentes y gaming de alto nivel.</p>
+      <div class="price">$90 - $110 USD</div>
+      <button class="btn-more" onclick="toggleDetails(this)">Ver más</button>
+      <div class="details">
+        <ul>
+          <li>Lectura de hasta 7000 MB/s</li>
+          <li>Interfaz PCIe Gen 4.0</li>
+          <li>Alta resistencia para cargas de trabajo pesadas</li>
+          <li>Disipador de calor incluido</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <img src="4k.jpg" alt="Kingston XS2000 2TB USB-C">
+    <div class="info">
+      <h2>Kingston XS2000 2TB USB-C</h2>
+      <p>SSD portátil ultrarrápido, ideal para almacenamiento móvil.</p>
+      <div class="price">$150 - $180 USD</div>
+      <button class="btn-more" onclick="toggleDetails(this)">Ver más</button>
+      <div class="details">
+        <ul>
+          <li>Velocidades de hasta 2000 MB/s</li>
+          <li>Conexión USB 3.2 Gen 2x2</li>
+          <li>Diseño resistente al agua y polvo</li>
+          <li>Compacto y ligero</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  function toggleDetails(button) {
+    var details = button.nextElementSibling;
+    if (details.style.display === "block") {
+      details.style.display = "none";
+      button.innerText = "Ver más";
+    } else {
+      details.style.display = "block";
+      button.innerText = "Ver menos";
+    }
+  }
+</script>
+
+</body>
+</html>

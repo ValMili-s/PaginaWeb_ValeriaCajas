@@ -1,0 +1,53 @@
+@font-face{
+    font-family: Greater Teory;
+    src: url(GreaterTheory.otf)
+}
+@font-face{
+    font-family: internet;
+    src: url(lt_internet.zip)
+}
+#p1{
+    font-family: Greater Teory;
+    font-size: 32px;
+    color:white;
+    text-align: center;
+}
+#p2{
+    font-family: internet;
+    font-size: 35px;
+    color:rgb(255, 86, 10);
+    text-align: center;
+}
+#p3{
+    font-family: internet;
+    font-size: 20px;
+    color:white; 
+    text-decoration: none;
+}
+
+.redes-sociales {
+    background-color: rgba(0, 10, 40, 0.9);
+    padding: 20px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.redes-sociales {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to top,#0511e9, #0f7ee6, #0511e9);
+    border: 2px solid;
+    margin-top: 30px;
+  }
+  
+  .redes-sociales img {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+  
+  .redes-sociales img:hover {
+    transform: scale(1.1);
+  }

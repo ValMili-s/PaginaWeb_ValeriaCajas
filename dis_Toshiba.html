@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Catálogo de Discos Toshiba</title>
+  <link rel="stylesheet" href="logotipo.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f0f8ff;
+    }
+    .menu-header {
+      background-color: #004080;
+      padding: 12px;
+      text-align: center;
+    }
+    .menu-header a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    .menu-header a:hover {
+      text-decoration: underline;
+    }
+    header {
+      padding: 40px 0 20px;
+      text-align: center;
+      font-size: 2.2rem;
+      color: #004080;
+    }
+    .catalog {
+      width: 90%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding-bottom: 50px;
+    }
+    .product {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      display: flex;
+      overflow: hidden;
+      transition: box-shadow 0.3s;
+    }
+    .product:hover {
+      box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    }
+    .product img {
+      width: 200px;
+      object-fit: cover;
+      background: #e6f0ff;
+    }
+    .info {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex: 1;
+    }
+    .info h2 {
+      margin: 0;
+      color: #003366;
+      font-size: 1.6rem;
+    }
+    .info p {
+      margin: 10px 0;
+      color: #555;
+    }
+    .info .price {
+      color: #0066cc;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+    .btn-more {
+      align-self: flex-start;
+      background: #0066cc;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      margin-top: 15px;
+      cursor: pointer;
+      transition: background 0.3s;
+      border-radius: 5px;
+    }
+    .btn-more:hover {
+      background: #004080;
+    }
+    .details {
+      display: none;
+      padding: 15px 20px;
+      background: #e6f0ff;
+      color: #333;
+      border-top: 1px solid #b3d1ff;
+    }
+    .details ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    .details ul li {
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="menu-header">
+  <a href="página2.html">Menú</a>
+  <a href="correo.html">Contáctenos</a>
+</div>
+
+<header>Catálogo de Discos Duros Toshiba</header>
+
+<div class="catalog">
+
+  <div class="product">
+    <img src="1toshiba.png" alt="Toshiba Canvio Basics 1TB">
+    <div class="info">
+      <h2>Toshiba Canvio Basics 1TB</h2>
+      <p>Almacenamiento portátil confiable y rápido para todos tus archivos.</p>
+      <div class="price">$45 - $55 USD</div>
+      <button class="btn-more" onclick="toggleDetails(this)">Ver más</button>
+      <div class="details">
+        <ul>
+          <li>Conexión USB 3.0</li>
+          <li>Compatible Windows/Mac</li>
+          <li>Plug and Play sin instalación</li>
+          <li>Diseño compacto</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <img src="2toshiba.jpeg" alt="Toshiba Canvio Advance 2TB">
+    <div class="info">
+      <h2>Toshiba Canvio Advance 2TB</h2>
+      <p>Protege tus datos con funciones de respaldo automáticas.</p>
+      <div class="price">$70 - $85 USD</div>
+      <button class="btn-more" onclick="toggleDetails(this)">Ver más</button>
+      <div class="details">
+        <ul>
+          <li>Software de copia de seguridad</li>
+          <li>Puerto USB 3.2</li>
+          <li>Resistente a huellas</li>
+          <li>Varios colores disponibles</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <img src="3toshiba.jpg" alt="Toshiba X300 4TB">
+    <div class="info">
+      <h2>Toshiba X300 4TB</h2>
+      <p>Alto rendimiento para gaming, edición de video y almacenamiento masivo.</p>
+      <div class="price">$100 - $120 USD</div>
+      <button class="btn-more" onclick="toggleDetails(this)">Ver más</button>
+      <div class="details">
+        <ul>
+          <li>Velocidad 7200 rpm</li>
+          <li>Buffer de 128 MB</li>
+          <li>Alta confiabilidad</li>
+          <li>Diseñado para cargas pesadas</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <img src="4toshiba.jpg" alt="Toshiba N300 6TB">
+    <div class="info">
+      <h2>Toshiba N300 6TB</h2>
+      <p>Perfecto para sistemas NAS de alta demanda 24/7.</p>
+      <div class="price">$140 - $160 USD</div>
+      <button class="btn-more" onclick="toggleDetails(this)">Ver más</button>
+      <div class="details">
+        <ul>
+          <li>Optimizado para NAS</li>
+          <li>Velocidad 7200 rpm</li>
+          <li>Alta durabilidad</li>
+          <li>Buffer de 256 MB</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  function toggleDetails(button) {
+    var details = button.nextElementSibling;
+    if (details.style.display === "block") {
+      details.style.display = "none";
+      button.innerText = "Ver más";
+    } else {
+      details.style.display = "block";
+      button.innerText = "Ver menos";
+    }
+  }
+</script>
+
+</body>
+</html>

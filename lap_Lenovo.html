@@ -1,0 +1,193 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ofertas en Productos</title>
+  <link rel="stylesheet" href="logotipo.css">
+  <style>
+    body {
+      margin: 0;
+      background-image: url('fondo2.webp');
+      background-size: cover;
+      background-attachment: fixed;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .menu-header {
+      width: 100%;
+      background: linear-gradient(to top right, #4ba4d8, #2825e6);
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+      position: fixed;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .menu-header a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 18px;
+    }
+
+    .menu-header a:hover {
+      text-decoration: underline;
+    }
+
+    .menu-spacing {
+      margin-top: 60px; 
+    }
+
+    .texto-derecha {
+      text-align: right;
+      margin-bottom: 10px;
+      width: 100%; 
+      padding-right: 20px; 
+    }
+
+    .contenedor-cubos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 30px;
+    }
+
+    .cube {
+      width: 200px;
+      height: 200px;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 10s;
+    }
+
+    .face {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      background: #668dc9;
+      border: 2px solid #74b6f3;
+      box-shadow: inset 0 0 10px #4986af;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      backface-visibility: hidden;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .face img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      margin: 5px;
+    }
+
+    .front { transform: rotateY(0deg) translateZ(100px); }
+    .back { transform: rotateY(180deg) translateZ(100px); }
+    .right { transform: rotateY(90deg) translateZ(100px); }
+    .left { transform: rotateY(-90deg) translateZ(100px); }
+    .top { transform: rotateX(90deg) translateZ(100px); }
+    .bottom { transform: rotateX(-90deg) translateZ(100px); }
+
+    .cube:hover {
+      transform: rotateX(360deg) rotateY(405deg);
+    }
+    .titulo-oferta {
+  text-align: center;
+  border-color: pink;
+  border-style: dotted;
+  border-width: 2px 4px 8px 16px;
+  background-color: rgba(191, 231, 228, 0.705);
+  margin: 20px;
+  padding: 10px;
+}
+  </style>
+</head>
+<body>
+  <div class="menu-header">
+    <a href="página2.html">Menu</a>
+    <a href="correo.html">Contáctenos</a>
+  </div>
+
+
+  <div class="menu-spacing">
+    <h2 class="titulo-oferta"><strong>LAPTOPS LENOVO CON EL 30% DE DESCUENTO</strong></h2>
+    <br><br>
+    <div class="contenedor-cubos">
+      <div class="cube">
+        <div class="face front"><img src="1len.jpg"></div>
+        <div class="face back"><img src="2len.jpg"></div>
+        <div class="face right"><img src="3len.jpeg"></div>
+        <div class="face left"><img src="4len.jpg"></div>
+        <div class="face top"><img src="5len.jpeg"></div>
+        <div class="face bottom"><img src="6len.jpeg"></div>
+      </div>
+      <div class="p4">
+        <center>
+          <p id="f4"><strong> Lenovo Ideacentre AIO 300. 500$</strong></p>
+        </center>
+        <ul type="circle">
+             <li><strong>Pantalla 4K táctil</strong> con colores vivos y resolución impresionante.</li> <li><strong>Procesadores Intel Core i5/i7</strong> y almacenamiento SSD para un rendimiento rápido y eficiente.</li>
+            <li><strong>Batería de larga duración</strong>, hasta 12-15 horas de autonomía.</li> 
+            <li><strong>Teclado retroiluminado</strong> y trackpad preciso para comodidad en el uso.</li> <li><strong>Conectividad</strong> con puertos USB-C, USB-A y lector de tarjetas microSD.</li> 
+        </ul>
+      </div>
+    </div>
+
+    <br><br><br><br>
+
+    <div class="contenedor-cubos">
+      <div class="cube">
+        <div class="face front"><img src="1ilen.avif"></div>
+        <div class="face back"><img src="2ilen.jpeg"></div>
+        <div class="face right"><img src="3ilen.png"></div>
+        <div class="face left"><img src="4ilen.jpeg"></div>
+        <div class="face top"><img src="5ilen.webp"></div>
+        <div class="face bottom"><img src="6ilen.jpeg"></div>
+      </div>
+      <div class="p4">
+        <center>
+          <p id="f4"><strong>Lenovo Ideapad. $800</strong></p>
+        </center>
+        <ul type="circle"> 
+            <li><strong>Pantalla:</strong> 15.6" HD o Full HD (1366 x 768 o 1920 x 1080).</li> 
+            <li><strong>Procesador:</strong> Intel Core i3 / i5 / i7 (o AMD Ryzen 3 / 5 / 7).</li> 
+            <li><strong>Batería de larga duración:</strong> hasta 12-15 horas de autonomía.</li> 
+            <li><strong>Memoria RAM:</strong> 8 GB DDR4.</li> 
+            <li><strong>Almacenamiento:</strong> SSD de 256 GB o 512 GB.</li> 
+        </ul>
+      </div>
+    </div>
+
+    <br><br><br><br>
+
+    <div class="contenedor-cubos">
+      <div class="cube">
+        <div class="face front"><img src="1leg.jpg" alt="OMEN frente"></div>
+        <div class="face back"><img src="2leg.jpg" alt="OMEN atrás"></div>
+        <div class="face right"><img src="3leg.jpg" alt="OMEN derecha"></div>
+        <div class="face left"><img src="4leg.jpg"OMEN izquierda"></div>
+        <div class="face top"><img src="5leg.webp" alt="OMEN arriba"></div>
+        <div class="face bottom"><img src="6leg.webp" alt="OMEN abajo"></div>
+      </div>
+      <div class="p4">
+        <center>
+          <p id="f4"><strong>Lenovo Legion. $600</strong></p>
+        </center>
+        <ul type="circle">
+            <li><strong>Pantalla:</strong> 16.1" Full HD IPS, 144Hz, ideal para gaming fluido.</li>
+            <li><strong>Procesador:</strong> Intel Core i7 de 12ª generación o AMD Ryzen 7, con rendimiento rápido y eficiente para tareas exigentes.</li>
+            <li><strong>Tarjeta Gráfica:</strong> NVIDIA GeForce RTX 3060 / 3070, con soporte para trazado de rayos y DLSS, proporcionando un alto rendimiento en juegos.</li>
+            <li><strong>Memoria RAM:</strong> 16 GB DDR5 expandible, para multitarea y rendimiento óptimo en juegos y aplicaciones.</li>
+            <li><strong>Almacenamiento:</strong> SSD NVMe de 512 GB o 1 TB, para arranques rápidos y tiempos de carga instantáneos.</li>
+            <li><strong>Teclado:</strong> RGB, sistema de refrigeración avanzada Legion Coldfront, y puertos Thunderbolt para una experiencia de gaming fluida y conectividad rápida.</li>
+          </ul>
+      </div>
+    </div>
+</body>
+</html>

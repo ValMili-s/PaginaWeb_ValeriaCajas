@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Routers TP-Link</title>
+  <link rel="stylesheet" href="logotipo.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f4f4;
+      padding: 0;
+    }
+    .menu-header {
+      width: 100%;
+      background: linear-gradient(to top right, #4ba4d8, #2825e6);
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+      position: fixed;
+      top: 0;
+      z-index: 1000;
+    }
+    .menu-header a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 18px;
+    }
+    .menu-header a:hover {
+      text-decoration: underline;
+    }
+    header {
+      background: linear-gradient(to top right, #4ba4d8, #2825e6);
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 1.8rem;
+      margin-top: 80px;
+      margin-bottom: 40px;
+      border-radius: 10px;
+      width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+      border: 2px solid #084298;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+      padding: 0 20px 40px;
+    }
+    .card {
+      background: white;
+      width: 300px;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: contain;
+      background: #f9f9f9;
+    }
+    .card-content {
+      padding: 20px;
+      flex-grow: 1;
+    }
+    .card-title {
+      font-size: 1.4rem;
+      color: #333;
+      margin-bottom: 10px;
+    }
+    .card-description {
+      font-size: 0.95rem;
+      color: #666;
+      margin-bottom: 15px;
+    }
+    .price {
+      font-size: 1.2rem;
+      color: #008080;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+    .btn-more {
+      background: #4ba4d8;
+      color: white;
+      padding: 10px;
+      border: none;
+      width: 100%;
+      font-size: 1rem;
+      cursor: pointer;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      transition: background 0.3s;
+    }
+    .btn-more:hover {
+      background: #357ab7;
+    }
+    .details {
+      display: none;
+      padding: 10px 20px;
+      background: #f9f9f9;
+      font-size: 0.9rem;
+      color: #444;
+    }
+    .details ul {
+      padding-left: 20px;
+    }
+    .details ul li {
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="menu-header">
+    <a href="página2.html">Menu</a>
+    <a href="correo.html">Contáctenos</a>
+  </div>
+
+  <header>Routers TP-Link</header>
+
+  <div class="products">
+
+    <div class="card">
+      <img src="1tp.jpg" alt="TP-Link Archer AX10">
+      <div class="card-content">
+        <div class="card-title">Archer AX10</div>
+        <div class="card-description">Wi-Fi 6 de alta velocidad para hogares modernos.</div>
+        <div class="price">$80 - $100 USD</div>
+      </div>
+      <button class="btn-more" onclick="toggleDetails(this)">Ver más</button>
+      <div class="details">
+        <ul>
+          <li>Wi-Fi 6: 1201 Mbps en 5 GHz / 300 Mbps en 2.4 GHz</li>
+          <li>Procesador Triple-Core 1.5GHz</li>
+          <li>4 puertos LAN Gigabit + 1 WAN</li>
+          <li>OFDMA, Beamforming, MU-MIMO</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="2tp.jpg" alt="TP-Link Archer AX73">
+      <div class="card-content">
+        <div class="card-title">Archer AX73</div>
+        <div class="card-description">Ideal para streaming, juegos y múltiples dispositivos.</div>
+        <div class="price">$150 - $180 USD</div>
+      </div>
+      <button class="btn-more" onclick="toggleDetails(this)">Ver más</button>
+      <div class="details">
+        <ul>
+          <li>Hasta 5400 Mbps</li>
+          <li>6 antenas de alto rendimiento</li>
+          <li>Seguridad HomeShield</li>
+          <li>Puerto USB 3.0</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="3tp.jpg" alt="TP-Link TL-WR841N">
+      <div class="card-content">
+        <div class="card-title">TL-WR841N</div>
+        <div class="card-description">Opción económica para estudiantes y casas pequeñas.</div>
+        <div class="price">$20 - $30 USD</div>
+      </div>
+      <button class="btn-more" onclick="toggleDetails(this)">Ver más</button>
+      <div class="details">
+        <ul>
+          <li>Hasta 300 Mbps</li>
+          <li>2 antenas de 5dBi</li>
+          <li>Modos: Router, AP, Repetidor</li>
+          <li>Configuración rápida por web</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="4tp.webp" alt="TP-Link Deco X20">
+      <div class="card-content">
+        <div class="card-title">Deco X20</div>
+        <div class="card-description">Sistema Mesh Wi-Fi 6 para toda la casa.</div>
+        <div class="price">$200 - $250 USD (pack 2 uds.)</div>
+      </div>
+      <button class="btn-more" onclick="toggleDetails(this)">Ver más</button>
+      <div class="details">
+        <ul>
+          <li>Cobertura hasta 370m²</li>
+          <li>Conexión de +150 dispositivos</li>
+          <li>Control parental integrado</li>
+          <li>App Deco para configuración fácil</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    function toggleDetails(button) {
+      var details = button.nextElementSibling;
+      if (details.style.display === "block") {
+        details.style.display = "none";
+        button.innerText = "Ver más";
+      } else {
+        details.style.display = "block";
+        button.innerText = "Ver menos";
+      }
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Routers Cisco</title>
+  <link rel="stylesheet" href="logotipo.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f4f4;
+      padding: 0;
+    }
+    .menu-header {
+      width: 100%;
+      background: linear-gradient(to top right, #4ba4d8, #2825e6);
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+      position: fixed;
+      top: 0;
+      z-index: 1000;
+    }
+    .menu-header a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 18px;
+    }
+    .menu-header a:hover {
+      text-decoration: underline;
+    }
+    header {
+      background: linear-gradient(to top right, #4ba4d8, #2825e6);
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 1.8rem;
+      margin-top: 80px;
+      margin-bottom: 40px;
+      border-radius: 10px;
+      width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+      border: 2px solid #084298;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+      padding: 0 20px 40px;
+    }
+    .card {
+      background: white;
+      width: 300px;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: contain;
+      background: #f9f9f9;
+    }
+    .card-content {
+      padding: 20px;
+      flex-grow: 1;
+    }
+    .card-title {
+      font-size: 1.4rem;
+      color: #333;
+      margin-bottom: 10px;
+    }
+    .card-description {
+      font-size: 0.95rem;
+      color: #666;
+      margin-bottom: 15px;
+    }
+    .price {
+      font-size: 1.2rem;
+      color: #008080;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+    .btn-more {
+      background: #4ba4d8;
+      color: white;
+      padding: 10px;
+      border: none;
+      width: 100%;
+      font-size: 1rem;
+      cursor: pointer;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      transition: background 0.3s;
+    }
+    .btn-more:hover {
+      background: #357ab7;
+    }
+    .details {
+      display: none;
+      padding: 10px 20px;
+      background: #f9f9f9;
+      font-size: 0.9rem;
+      color: #444;
+    }
+    .details ul {
+      padding-left: 20px;
+    }
+    .details ul li {
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="menu-header">
+    <a href="página2.html">Menu</a>
+    <a href="correo.html">Contáctenos</a>
+  </div>
+
+  <header>Routers Cisco</header>
+
+  <div class="products">
+
+    <div class="card">
+      <img src="1cisco.jpg" alt="Cisco RV340">
+      <div class="card-content">
+        <div class="card-title">Cisco RV340</div>
+        <div class="card-description">Router VPN dual WAN para pequeñas empresas.</div>
+        <div class="price">$200 - $250 USD</div>
+      </div>
+      <button class="btn-more" onclick="toggleDetails(this)">Ver más</button>
+      <div class="details">
+        <ul>
+          <li>2 puertos WAN + 4 LAN Gigabit</li>
+          <li>VPN IPsec y SSL</li>
+          <li>Firewall integrado</li>
+          <li>Alta seguridad empresarial</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="2cisco.jpg" alt="Cisco Catalyst 9105">
+      <div class="card-content">
+        <div class="card-title">Catalyst 9105</div>
+        <div class="card-description">Punto de acceso Wi-Fi 6 compacto y potente.</div>
+        <div class="price">$400 - $450 USD</div>
+      </div>
+      <button class="btn-more" onclick="toggleDetails(this)">Ver más</button>
+      <div class="details">
+        <ul>
+          <li>Wi-Fi 6 (802.11ax)</li>
+          <li>Seguridad mejorada con WPA3</li>
+          <li>Ideal para oficinas pequeñas</li>
+          <li>Gestión en la nube con Cisco DNA Center</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="3cisco.jpg" alt="Cisco RV160">
+      <div class="card-content">
+        <div class="card-title">Cisco RV160</div>
+        <div class="card-description">Router de rendimiento compacto para oficinas remotas.</div>
+        <div class="price">$100 - $130 USD</div>
+      </div>
+      <button class="btn-more" onclick="toggleDetails(this)">Ver más</button>
+      <div class="details">
+        <ul>
+          <li>VPN segura IPsec</li>
+          <li>Firewall de alto rendimiento</li>
+          <li>1 puerto WAN + 4 puertos LAN</li>
+          <li>Configuración sencilla basada en web</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="4cisco.jpg" alt="Cisco Meraki MX64">
+      <div class="card-content">
+        <div class="card-title">Meraki MX64</div>
+        <div class="card-description">Router de seguridad todo en uno basado en la nube.</div>
+        <div class="price">$600 - $650 USD</div>
+      </div>
+      <button class="btn-more" onclick="toggleDetails(this)">Ver más</button>
+      <div class="details">
+        <ul>
+          <li>Firewall de próxima generación</li>
+          <li>Administración centralizada en la nube</li>
+          <li>VPN automática</li>
+          <li>Ideal para sucursales pequeñas</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    function toggleDetails(button) {
+      var details = button.nextElementSibling;
+      if (details.style.display === "block") {
+        details.style.display = "none";
+        button.innerText = "Ver más";
+      } else {
+        details.style.display = "block";
+        button.innerText = "Ver menos";
+      }
+    }
+  </script>
+
+</body>
+</html>

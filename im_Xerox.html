@@ -1,0 +1,215 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Impresoras Xerox</title>
+  <link rel="stylesheet" href="logotipo.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #f4f4f4;
+    }
+
+    .menu-header {
+      width: 100%;
+      background: linear-gradient(to top right, #4ba4d8, #2825e6);
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+      position: fixed;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .menu-header a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 18px;
+    }
+
+    .menu-header a:hover {
+      text-decoration: underline;
+    }
+
+    .main-container {
+      margin-top: 80px;
+      width: 90%;
+      max-width: 1200px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 40px;
+    }
+
+    .product-box {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s;
+      margin-bottom: 30px;
+    }
+
+    .product-box:hover {
+      transform: translateY(-10px);
+    }
+
+    .product-box img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .product-box h3 {
+      color: #333;
+      font-size: 1.5rem;
+      margin-top: 10px;
+    }
+
+    .product-box p {
+      color: #555;
+      margin-top: 10px;
+      font-size: 1rem;
+    }
+
+    .price {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #d32f2f;
+      margin-top: 15px;
+    }
+
+    .feature-list {
+      text-align: left;
+      margin-top: 15px;
+      font-size: 0.9rem;
+      color: #333;
+    }
+
+    .feature-list li {
+      margin-bottom: 8px;
+    }
+
+    .accordion {
+      background-color: #4ba4d8;
+      color: white;
+      cursor: pointer;
+      padding: 10px;
+      width: 100%;
+      text-align: left;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      margin-top: 10px;
+    }
+
+    .accordion:hover {
+      background-color: #357ab7;
+    }
+
+    .panel {
+      padding: 10px;
+      background-color: #f4f4f4;
+      border-radius: 5px;
+      margin-top: 10px;
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="menu-header">
+    <a href="página2.html">Menu</a>
+    <a href="correo.html">Contáctenos</a>
+  </div>
+
+  <div class="main-container">
+    <div class="product-box">
+      <img src="1xerox.webp" alt="Xerox WorkCentre 6515">
+      <h3>Xerox WorkCentre 6515</h3>
+      <p>Impresora multifunción a color ideal para oficinas pequeñas.</p>
+      <div class="price">$450 - $550 USD</div>
+      <button class="accordion">Características</button>
+      <div class="panel">
+        <ul class="feature-list">
+          <li><strong>Función:</strong> Imprime, copia, escanea y envía fax.</li>
+          <li><strong>Velocidad:</strong> Hasta 30 ppm (páginas por minuto).</li>
+          <li><strong>Conectividad:</strong> Wi-Fi Direct, Ethernet, USB.</li>
+          <li><strong>Resolución:</strong> 1200 x 2400 dpi reales.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="product-box">
+      <img src="2xerox.png" alt="Xerox VersaLink C405">
+      <h3>Xerox VersaLink C405</h3>
+      <p>Impresora multifunción inteligente para grupos de trabajo medianos.</p>
+      <div class="price">$700 - $850 USD</div>
+      <button class="accordion">Características</button>
+      <div class="panel">
+        <ul class="feature-list">
+          <li><strong>Pantalla:</strong> Táctil de 5 pulgadas a color.</li>
+          <li><strong>Seguridad:</strong> Seguridad completa integrada.</li>
+          <li><strong>Velocidad:</strong> Hasta 36 ppm.</li>
+          <li><strong>Conectividad:</strong> NFC, Wi-Fi, Ethernet, USB.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="product-box">
+      <img src="3xerox.jpg" alt="Xerox Phaser 6510">
+      <h3>Xerox Phaser 6510</h3>
+      <p>Impresora a color compacta de alta calidad para oficinas.</p>
+      <div class="price">$300 - $400 USD</div>
+      <button class="accordion">Características</button>
+      <div class="panel">
+        <ul class="feature-list">
+          <li><strong>Velocidad:</strong> Hasta 30 ppm en color y blanco y negro.</li>
+          <li><strong>Resolución:</strong> 1200 x 2400 dpi.</li>
+          <li><strong>Conectividad:</strong> Wi-Fi opcional, USB 3.0, Ethernet.</li>
+          <li><strong>Bandeja de papel:</strong> Hasta 250 hojas.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="product-box">
+      <img src="4xerox.jpg" alt="Xerox B210">
+      <h3>Xerox B210</h3>
+      <p>Impresora monocromo compacta y eficiente para el hogar y pequeñas oficinas.</p>
+      <div class="price">$150 - $200 USD</div>
+      <button class="accordion">Características</button>
+      <div class="panel">
+        <ul class="feature-list">
+          <li><strong>Tipo:</strong> Solo impresión monocromo.</li>
+          <li><strong>Velocidad:</strong> Hasta 31 ppm.</li>
+          <li><strong>Conectividad:</strong> Wi-Fi, Wi-Fi Direct, Ethernet, USB.</li>
+          <li><strong>Resolución:</strong> Hasta 1200 x 1200 dpi.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>

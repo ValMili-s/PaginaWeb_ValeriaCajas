@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de Compra y Comentarios</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f8ff;
+      margin: 0;
+      padding: 20px;
+    }
+    form {
+      background: white;
+      max-width: 600px;
+      margin: auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #004080;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      color: #003366;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    button {
+      margin-top: 20px;
+      width: 100%;
+      background: #004080;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #0066cc;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Formulario de Compra y Comentarios</h1>
+
+<form action="https://formspree.io/f/mqkrvwbv" method="POST">
+  
+  <label for="nombre">Nombre completo:</label>
+  <input type="text" id="nombre" name="Nombre" required>
+
+  <label for="correo">Correo electrónico:</label>
+  <input type="email" id="correo" name="Correo" required>
+
+  <label for="telefono">Teléfono:</label>
+  <input type="text" id="telefono" name="Teléfono" required>
+
+  <label for="producto">Producto que desea comprar:</label>
+  <select id="producto" name="Producto" required>
+    <option value="">-- Selecciona un producto --</option>
+    <option value="Laptop HP 15">Laptop HP 15</option>
+    <option value="Laptop Lenovo IdeaPad">Laptop Lenovo IdeaPad</option>
+    <option value="Disco Kingston A400 240GB">Disco Kingston A400 240GB</option>
+    <option value="Disco Kingston NV1 500GB NVMe">Disco Kingston NV1 500GB NVMe</option>
+    <option value="Disco Kingston KC3000 1TB PCIe 4.0">Disco Kingston KC3000 1TB PCIe 4.0</option>
+    <option value="Disco Kingston XS2000 2TB USB-C">Disco Kingston XS2000 2TB USB-C</option>
+    <option value="Disco ADATA Ultimate SU650 240GB">Disco ADATA Ultimate SU650 240GB</option>
+    <option value="Disco ADATA XPG GAMMIX S5 512GB">Disco ADATA XPG GAMMIX S5 512GB</option>
+    <option value="Computadora Armadas">Computadora Armada</option>
+    <option value="Otros">Otros productos</option>
+  </select>
+
+  <label for="marca">Marca del Producto:</label>
+  <input type="text" id="marca" name="Marca" required>
+
+  <label for="comentarios">Comentarios adicionales:</label>
+  <textarea id="comentarios" name="Comentarios" rows="4" placeholder="Escribe tus comentarios aquí..."></textarea>
+
+  <button type="submit">Enviar</button>
+
+</form>
+<div style="text-align: center; margin-top: 20px;">
+    <a href="página2.html" style="background-color: #0066cc; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Ir al Menú</a>
+  </div>
+</body>
+</html>

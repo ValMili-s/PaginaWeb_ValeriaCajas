@@ -1,0 +1,248 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Impresoras Epson</title>
+  <link rel="stylesheet" href="logotipo.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #f4f4f4;
+    }
+
+    .menu-header {
+      width: 100%;
+      background: linear-gradient(to top right, #4ba4d8, #2825e6);
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+      position: fixed;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .menu-header a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 18px;
+    }
+
+    .menu-header a:hover {
+      text-decoration: underline;
+    }
+
+    .main-container {
+      margin-top: 80px;
+      width: 90%;
+      max-width: 1200px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 40px;
+    }
+
+    .product-box {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s;
+      margin-bottom: 30px;
+    }
+
+    .product-box:hover {
+      transform: translateY(-10px);
+    }
+
+    .product-box img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .product-box h3 {
+      color: #333;
+      font-size: 1.5rem;
+      margin-top: 10px;
+    }
+
+    .product-box p {
+      color: #555;
+      margin-top: 10px;
+      font-size: 1rem;
+    }
+
+    .price {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #d32f2f;
+      margin-top: 15px;
+    }
+
+    .feature-list {
+      text-align: left;
+      margin-top: 15px;
+      font-size: 0.9rem;
+      color: #333;
+    }
+
+    .feature-list li {
+      margin-bottom: 8px;
+    }
+
+    .accordion {
+      background-color: #4ba4d8;
+      color: white;
+      cursor: pointer;
+      padding: 10px;
+      width: 100%;
+      text-align: left;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      margin-top: 10px;
+    }
+
+    .accordion:hover {
+      background-color: #357ab7;
+    }
+
+    .panel {
+      padding: 10px;
+      background-color: #f4f4f4;
+      border-radius: 5px;
+      margin-top: 10px;
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="menu-header">
+    <a href="página2.html">Menu</a>
+    <a href="correo.html">Contáctenos</a>
+  </div>
+
+  <div class="main-container">
+    <div class="product-box">
+      <img src="4eco.jpg" alt="Epson EcoTank L3250">
+      <h3>Epson EcoTank L3250</h3>
+      <p>Impresora multifunción inalámbrica de alto rendimiento.</p>
+      <div class="price">$180 - $220 USD</div>
+      <button class="accordion">Características</button>
+      <div class="panel">
+        <ul class="feature-list">
+          <li><strong>Función:</strong> Imprime, copia y escanea.</li>
+          <li><strong>Conectividad:</strong> Wi-Fi, Epson Smart Panel.</li>
+          <li><strong>Rendimiento:</strong> Hasta 4,500 páginas en negro.</li>
+          <li><strong>EcoTank:</strong> Sistema de tanque de tinta sin cartuchos.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="product-box">
+      <img src="2eco.webp" alt="Epson EcoTank L4260">
+      <h3>Epson EcoTank L4260</h3>
+      <p>Impresora duplex automática para oficinas pequeñas.</p>
+      <div class="price">$250 - $300 USD</div>
+      <button class="accordion">Características</button>
+      <div class="panel">
+        <ul class="feature-list">
+          <li><strong>Duplex:</strong> Impresión automática a doble cara.</li>
+          <li><strong>Velocidad:</strong> Hasta 10.5 ppm (negro).</li>
+          <li><strong>Pantalla:</strong> LCD a color de 1.44".</li>
+          <li><strong>Conectividad:</strong> Wi-Fi Direct, Ethernet.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="product-box">
+      <img src="3eco.webp" alt="Epson WorkForce WF-2850">
+      <h3>Epson WorkForce WF-2850</h3>
+      <p>Ideal para oficinas en casa, todo en uno compacto.</p>
+      <div class="price">$120 - $160 USD</div>
+      <button class="accordion">Características</button>
+      <div class="panel">
+        <ul class="feature-list">
+          <li><strong>Función:</strong> Imprime, escanea, copia y envía fax.</li>
+          <li><strong>Conectividad:</strong> Wi-Fi Direct, USB.</li>
+          <li><strong>Alimentador automático:</strong> Para múltiples hojas.</li>
+          <li><strong>Compatibilidad:</strong> Epson iPrint y AirPrint.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="product-box">
+      <img src="6eco.jpg" alt="Epson SureColor P700">
+      <h3>Epson SureColor P700</h3>
+      <p>Impresora fotográfica profesional de alta definición.</p>
+      <div class="price">$700 - $750 USD</div>
+      <button class="accordion">Características</button>
+      <div class="panel">
+        <ul class="feature-list">
+          <li><strong>Resolución:</strong> Hasta 5760 x 1440 dpi.</li>
+          <li><strong>Formatos:</strong> Hasta 13 pulgadas de ancho.</li>
+          <li><strong>Colores:</strong> 10 tintas UltraChrome PRO10.</li>
+          <li><strong>Conectividad:</strong> Wi-Fi, Ethernet, USB 3.0.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="product-box">
+      <img src="5eco.jpeg" alt="Epson L8050">
+      <h3>Epson L8050</h3>
+      <p>Impresión de fotos inalámbrica y de alta calidad.</p>
+      <div class="price">$350 - $400 USD</div>
+      <button class="accordion">Características</button>
+      <div class="panel">
+        <ul class="feature-list">
+          <li><strong>Formato:</strong> A4 y fotografía sin bordes.</li>
+          <li><strong>Tanques de tinta:</strong> Sistema EcoTank de 6 colores.</li>
+          <li><strong>Velocidad:</strong> Foto 10x15 cm en 30 segundos.</li>
+          <li><strong>Conectividad:</strong> Wi-Fi, USB.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="product-box">
+      <img src="1eco.webp" alt="Epson EcoTank L121">
+      <h3>Epson EcoTank L121</h3>
+      <p>Impresora sencilla, económica y de alto rendimiento.</p>
+      <div class="price">$90 - $120 USD</div>
+      <button class="accordion">Características</button>
+      <div class="panel">
+        <ul class="feature-list">
+          <li><strong>Tipo:</strong> Solo impresión (no escanea).</li>
+          <li><strong>Velocidad:</strong> Hasta 9 ppm (negro).</li>
+          <li><strong>Conectividad:</strong> USB 2.0.</li>
+          <li><strong>Tanques de tinta:</strong> Alta eficiencia EcoTank.</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>

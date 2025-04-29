@@ -1,0 +1,195 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ofertas en Productos</title>
+  <link rel="stylesheet" href="logotipo.css">
+  <style>
+    body {
+      margin: 0;
+      background-image: url('fondo2.webp');
+      background-size: cover;
+      background-attachment: fixed;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .menu-header {
+      width: 100%;
+      background: linear-gradient(to top right, #4ba4d8, #2825e6);
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+      position: fixed;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .menu-header a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 18px;
+    }
+
+    .menu-header a:hover {
+      text-decoration: underline;
+    }
+
+    .menu-spacing {
+      margin-top: 60px; 
+    }
+
+    .texto-derecha {
+      text-align: right;
+      margin-bottom: 10px;
+      width: 100%; 
+      padding-right: 20px; 
+    }
+
+    .contenedor-cubos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 30px;
+    }
+
+    .cube {
+      width: 200px;
+      height: 200px;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 10s;
+    }
+
+    .face {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      background: #668dc9;
+      border: 2px solid #74b6f3;
+      box-shadow: inset 0 0 10px #4986af;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      backface-visibility: hidden;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .face img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      margin: 5px;
+    }
+
+    .front { transform: rotateY(0deg) translateZ(100px); }
+    .back { transform: rotateY(180deg) translateZ(100px); }
+    .right { transform: rotateY(90deg) translateZ(100px); }
+    .left { transform: rotateY(-90deg) translateZ(100px); }
+    .top { transform: rotateX(90deg) translateZ(100px); }
+    .bottom { transform: rotateX(-90deg) translateZ(100px); }
+
+    .cube:hover {
+      transform: rotateX(360deg) rotateY(405deg);
+    }
+    .titulo-oferta {
+  text-align: center;
+  border-color: pink;
+  border-style: dotted;
+  border-width: 2px 4px 8px 16px;
+  background-color: rgba(191, 231, 228, 0.705);
+  margin: 20px;
+  padding: 10px;
+}
+  </style>
+</head>
+<body>
+  <div class="menu-header">
+    <a href="página2.html">Menu</a>
+    <a href="correo.html">Contáctenos</a>
+  </div>
+
+
+  <div class="menu-spacing">
+    <h2 class="titulo-oferta"><strong>LAPTOPS HP CON EL 25% DE DESCUENTO</strong></h2>
+    <br><br>
+    <div class="contenedor-cubos">
+      <div class="cube">
+        <div class="face front"><img src="1hpspectre.jpg"></div>
+        <div class="face back"><img src="2hpspectre.jpg"></div>
+        <div class="face right"><img src="3hpspectre.jpg"></div>
+        <div class="face left"><img src="4hpspectre.jpg"></div>
+        <div class="face top"><img src="5hpspectre.jpg"></div>
+        <div class="face bottom"><img src="6hpspectre.jpg"></div>
+      </div>
+      <div class="p4">
+        <center>
+          <p id="f4"><strong>HP Spectre x360. $450</strong></p>
+        </center>
+        <ul type="circle">
+          <li>Pantalla 4K táctil con colores vivos y resolución impresionante.</li>
+          <li>Procesadores Intel Core i5/i7 y almacenamiento SSD para un rendimiento rápido y eficiente.</li>
+          <li>Batería de larga duración, hasta 12-15 horas de autonomía.</li>
+          <li>Teclado retroiluminado y trackpad preciso para comodidad en el uso.</li>
+          <li>Conectividad con puertos USB-C, USB-A y lector de tarjetas microSD.</li>
+        </ul>
+      </div>
+    </div>
+
+    <br><br><br><br>
+
+    <div class="contenedor-cubos">
+      <div class="cube">
+        <div class="face front"><img src="1hp15.jpg"></div>
+        <div class="face back"><img src="2hp15.jpg"></div>
+        <div class="face right"><img src="3hp15.webp"></div>
+        <div class="face left"><img src="4hp15.jpg"></div>
+        <div class="face top"><img src="5hp15.webp"></div>
+        <div class="face bottom"><img src="6hp15.jpeg"></div>
+      </div>
+      <div class="p4">
+        <center>
+          <p id="f4"><strong>HP 15. $650</strong></p>
+        </center>
+        <ul type="circle">
+          <li>Pantalla: 15.6" HD o Full HD (1366 x 768 o 1920 x 1080).</li>
+          <li>Procesador: Intel Core i3 / i5 / i7 (o AMD Ryzen 3 / 5 / 7)</li>
+          <li>Batería de larga duración, hasta 12-15 horas de autonomía.</li>
+          <li>Memoria RAM: 8 GB DDR4</li>
+          <li>Almacenamiento: SSD de 256 GB o 512 GB</li>
+        </ul>
+      </div>
+    </div>
+
+    <br><br><br><br>
+
+    <div class="contenedor-cubos">
+      <div class="cube">
+        <div class="face front"><img src="1omen.avif" alt="OMEN frente"></div>
+        <div class="face back"><img src="2omen.jpg" alt="OMEN atrás"></div>
+        <div class="face right"><img src="3omen.jpg" alt="OMEN derecha"></div>
+        <div class="face left"><img src="4omen.webp" alt="OMEN izquierda"></div>
+        <div class="face top"><img src="5omen.jpg" alt="OMEN arriba"></div>
+        <div class="face bottom"><img src="6omen.jpg" alt="OMEN abajo"></div>
+      </div>
+      <div class="p4">
+        <center>
+          <p id="f4"><strong>HP OMEN 16. $980</strong></p>
+        </center>
+        <ul type="circle">
+          <li>Pantalla: 16.1" Full HD IPS, 144Hz, ideal para gaming fluido.</li>
+          <li>Procesador: Intel Core i7 de 12ª generación o AMD Ryzen 7.</li>
+          <li>Tarjeta Gráfica: NVIDIA GeForce RTX 3060 / 3070 para alto rendimiento en juegos.</li>
+          <li>Memoria RAM: 16 GB DDR5 expandible.</li>
+          <li>Almacenamiento: SSD NVMe de 512 GB o 1 TB.</li>
+          <li>Teclado RGB, sistema de refrigeración avanzada y puertos Thunderbolt.</li>
+        </ul>
+      </div>
+    </div>
+</body>
+</html>

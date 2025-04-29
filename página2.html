@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Página2</title>
+    <link rel="stylesheet" href="página2.css">
+    <style>
+        body {
+            background-image: url('fondo_página.jpg');
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+
+    .menu {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 20px;
+        flex-wrap: wrap;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(to right, #0f7ee6, #0511e9); 
+        padding: 10px 0;
+        z-index: 1000;
+    }
+
+        .menu > li {
+            list-style: none;
+            position: relative;
+        }
+
+        .menu > li > a {
+            text-decoration: none;
+            font-size: 22px;
+            padding: 10px 15px;
+            background: linear-gradient(to right, #0f7ee6, #0511e9);
+            border-radius: 8px;
+            transition: transform 0.3s, filter 0.3s;
+            color: white;
+            font-family: sans-serif;
+            display: inline-block;
+        }
+
+        .menu > li > a:hover {
+            filter: brightness(1.2);
+            transform: scale(1.05);
+        }
+
+        .submenu {
+           display: none;
+           position: absolute;
+           top: 100%;
+           left: 0;
+           background: linear-gradient(to top, #0511e9, #0f7ee6, #0511e9);
+           padding: 10px;
+           border-radius: 8px;
+           min-width: 160px;
+           z-index: 999;
+           border: 2px solid white;
+        }
+
+        .submenu li {
+            list-style: none;
+            margin: 6px 0;
+        }
+        .submenu li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-family: sans-serif;
+        }
+
+        .submenu li a:hover {
+            color: rgb(255, 86, 10);
+        }
+
+        .menu > li:hover .submenu {
+            display: block;
+        }
+
+        h2 {
+            margin: 1px;
+            padding: 30px;
+            margin-top: 80px;
+            color: white;
+            text-align: center;
+            font-family: sans-serif;
+        }
+
+        .texto-derecha {
+            text-align: right;
+            margin-top: 20px;
+        }
+
+        #p3:hover {
+            color: rgb(255, 86, 10);
+        }
+
+        .contenido-imagen {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .contenido-imagen img {
+            width: 600px;
+            height: auto;
+            border-radius: 0;
+            box-shadow: none;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <ul class="menu">
+        <li>
+          <a href="index.html">Inicio</a>
+        </li>
+        <li>
+            <a href="#">Laptops</a>
+            <ul class="submenu">
+                <li><a href="lap_HP.html">HP</a></li>
+                <li><a href="lap_Dell.html">Dell</a></li>
+                <li><a href="lap_Lenovo.html">Lenovo</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Impresoras</a>
+            <ul class="submenu">
+                <li><a href="im_Epson.html">Epson</a></li>
+                <li><a href="im_Xerox.html">Xerox</a></li>
+                <li><a href="im_HP.html">HP</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Routers</a>
+            <ul class="submenu">
+                <li><a href="rou_TP.html">TP-Link</a></li>
+                <li><a href="rou_Cisco.html">Cisco</a></li>
+                <li><a href="rou_Asus.html">Asus</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Discos Duros</a>
+            <ul class="submenu">
+                <li><a href="dis_Toshiba.html">Toshiba</a></li>
+                <li><a href="dis_Kingston.html">Kingston</a></li>
+                <li><a href="dis_ADATA.html">ADATA</a></li>
+            </ul>
+        </li>
+    </ul>
+    <br><br>
+    <br><br>
+
+    <div class="contenido-imagen">
+        <img src="productos tecnológicos.jpg" alt="Imagen de productos tecnológicos">
+    </div>
+    <footer class="redes-sociales">
+      <a href="https://www.facebook.com/share/16AeogAast/" target="_blank">
+          <img src="iconofacebook.webp" alt="Facebook">
+      </a>
+      <a href="https://www.tiktok.com/@milizk17?fbclid=IwY2xjawJ58uNleHRuA2FlbQIxMABicmlkETA5am94UlRMdGszelB3eUZyAR6sJ_OxBH2GnWVsM1ixikxhJsViE_ohAmN9pTIG0O88O4-BQNGcXvW25-9Zsw_aem_kWtS-gbjKEJF_101EAVGDw" target="_blank">
+          <img src="iconotiktok.png" alt="Tiktok">
+      </a>
+      <a href="https://www.instagram.com/val_cajas/?fbclid=IwY2xjawJ58qxleHRuA2FlbQIxMABicmlkETA5am94UlRMdGszelB3eUZyAR44L1W-zXKrV8-CLg6LSEYe7MicWaVMAUdwyj7j9nskkEQg7EwPGAUcIHzvdA_aem_eWGmkCIr2NaeMVZgaLBOoA#" target="_blank">
+          <img src="iconoins.jpeg" alt="Instagram">
+      </a>
+      <a href="0939383855" target="_blank">
+          <img src="iconowasa.avif" alt="WhatsApp">
+      </a>
+  </footer>
+</body>
+</html>

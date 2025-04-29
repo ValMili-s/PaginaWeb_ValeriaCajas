@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ofertas en Productos</title>
+  <link rel="stylesheet" href="logotipo.css">
+  <style>
+    body {
+      margin: 0;
+      background-image: url('fondo2.webp');
+      background-size: cover;
+      background-attachment: fixed;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .menu-header {
+      width: 100%;
+      background-color: #333;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+      position: fixed;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .menu-header a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 18px;
+    }
+
+    .menu-header a:hover {
+      text-decoration: underline;
+    }
+
+    .menu-spacing {
+      margin-top: 60px; 
+    }
+
+    .texto-derecha {
+      text-align: right;
+      margin-bottom: 10px;
+      width: 100%; 
+      padding-right: 20px; 
+    }
+
+    .contenedor-cubos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 30px;
+    }
+
+    .cube {
+      width: 200px;
+      height: 200px;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 10s;
+    }
+
+    .face {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      background: #668dc9;
+      border: 2px solid #74b6f3;
+      box-shadow: inset 0 0 10px #4986af;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      backface-visibility: hidden;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .face img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      margin: 5px;
+    }
+
+    .front { transform: rotateY(0deg) translateZ(100px); }
+    .back { transform: rotateY(180deg) translateZ(100px); }
+    .right { transform: rotateY(90deg) translateZ(100px); }
+    .left { transform: rotateY(-90deg) translateZ(100px); }
+    .top { transform: rotateX(90deg) translateZ(100px); }
+    .bottom { transform: rotateX(-90deg) translateZ(100px); }
+
+    .cube:hover {
+      transform: rotateX(360deg) rotateY(405deg);
+    }
+    header {
+       text-align: center;
+       border: 3px dotted pink;
+       background-color: rgba(191, 231, 228, 0.705);
+       margin: 20px;
+       padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="menu-header">
+    <a href="página2.html">Menu</a>
+    <a href="correo.html">Contáctenos</a>
+  </div>
+  <br><br>
+  <header>
+    <h2><strong>LAPTOPS DELL CON EL 25% DE DESCUENTO</strong></h2>
+  </header>
+  <br><br>
+
+
+  <div class="contenedor-cubos">
+    <div class="cube">
+      <div class="face front"><img src="1XPS.webp" alt="Dell XPS"></div>
+      <div class="face back"><img src="2XPS.jpg" alt="Dell XPS Back"></div>
+      <div class="face right"><img src="3XPS.jpg" alt="Dell XPS Right"></div>
+      <div class="face left"><img src="4XPS.jpg" alt="Dell XPS Left"></div>
+      <div class="face top"><img src="5XPS.jpg" alt="Dell XPS Top"></div>
+      <div class="face bottom"><img src="6XPS.jpg" alt="Dell XPS Bottom"></div>
+    </div>
+    <div class="p4">
+      <center>
+        <p id="f4"><strong>Dell XPS 13. $1,200</strong></p>
+      </center>
+      <ul type="circle">
+        <li>Pantalla 13.4" Full HD+ con bordes ultra delgados para una experiencia visual increíble.</li>
+        <li>Procesador Intel Core i7 de 11ª generación para un rendimiento rápido y eficiente.</li>
+        <li>Memoria RAM: 16 GB LPDDR4x, ideal para multitarea y edición de contenido pesado.</li>
+        <li>Almacenamiento SSD de 512 GB para arranques rápidos y acceso inmediato a tus archivos.</li>
+        <li>Teclado retroiluminado y gran duración de batería, hasta 12 horas de uso continuo.</li>
+        <li>Diseño ultra delgado y ligero, ideal para profesionales en movimiento.</li>
+      </ul>
+    </div>
+  </div>
+  <br><br>
+  <div class="contenedor-cubos">
+    <div class="cube">
+      <div class="face front"><img src="1Latitude.jpg" alt="Dell Latitude"></div>
+      <div class="face back"><img src="2Latitude.jpg" alt="Dell Latitude Back"></div>
+      <div class="face right"><img src="3Latitude.jpg" alt="Dell Latitude Right"></div>
+      <div class="face left"><img src="4Latitude.jpg" alt="Dell Latitude Left"></div>
+      <div class="face top"><img src="5Latitude.jpg" alt="Dell Latitude Top"></div>
+      <div class="face bottom"><img src="6Latitude.webp" alt="Dell Latitude Bottom"></div>
+    </div>
+    <div class="p4">
+      <center>
+        <p id="f4"><strong>Dell Latitude 7490. $1,000</strong></p>
+      </center>
+      <ul type="circle">
+        <li>Pantalla 14" Full HD (1920x1080) con excelente ángulo de visión y colores precisos.</li>
+        <li>Procesador Intel Core i5/i7 de 8ª generación para un rendimiento de alto nivel.</li>
+        <li>Memoria RAM de 8 GB o 16 GB, ideal para multitarea sin interrupciones.</li>
+        <li>Almacenamiento SSD de 256 GB o 512 GB para una rápida carga de archivos y aplicaciones.</li>
+        <li>Batería de larga duración que puede alcanzar hasta 10 horas de uso continuado.</li>
+        <li>Teclado retroiluminado y puerto USB-C para conectividad de última generación.</li>
+      </ul>
+    </div>
+  </div>
+  <br><br>
+  <div class="contenedor-cubos">
+    <div class="cube">
+      <div class="face front"><img src="1vostro.jpg" alt="Dell Vostro frente"></div>
+      <div class="face back"><img src="2vostro.jpg" alt="Dell Vostro atrás"></div>
+      <div class="face right"><img src="3vostro.jpg" alt="Dell Vostro derecha"></div>
+      <div class="face left"><img src="4vostro.jpg" alt="Dell Vostro izquierda"></div>
+      <div class="face top"><img src="5vostro.jpg" alt="Dell Vostro arriba"></div>
+      <div class="face bottom"><img src="6vostro.webp" alt="Dell Vostro abajo"></div>
+    </div>
+    <div class="p4">
+      <center>
+        <p id="f4"><strong>Dell Vostro 3510. $730</strong></p>
+      </center>
+      <ul type="circle">
+        <li>Pantalla: 15.6" Full HD (1920x1080), antirreflejo para mayor comodidad visual.</li>
+        <li>Procesador: Intel Core i5 de 11ª generación con gráficos Intel UHD.</li>
+        <li>Memoria RAM: 8 GB DDR4, expandible hasta 16 GB.</li>
+        <li>Almacenamiento: SSD de 512 GB para un arranque rápido.</li>
+        <li>Teclado completo con teclado numérico y touchpad de precisión.</li>
+        <li>Ideal para trabajo de oficina, videollamadas y tareas multitarea.</li>
+      </ul>
+    </div>
+  </div>
+
+
+</body>
+</html>

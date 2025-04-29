@@ -1,0 +1,200 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Impresoras HP</title>
+  <link rel="stylesheet" href="logotipo.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #f4f4f4;
+    }
+    .menu-header {
+      width: 100%;
+      background: linear-gradient(to top right, #4ba4d8, #2825e6);
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+      position: fixed;
+      top: 0;
+      z-index: 1000;
+    }
+    .menu-header a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 18px;
+    }
+    .menu-header a:hover {
+      text-decoration: underline;
+    }
+    .main-container {
+      margin-top: 80px;
+      width: 90%;
+      max-width: 1200px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 40px;
+    }
+    .product-box {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s;
+      margin-bottom: 30px;
+    }
+    .product-box:hover {
+      transform: translateY(-10px);
+    }
+    .product-box img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .product-box h3 {
+      color: #333;
+      font-size: 1.5rem;
+      margin-top: 10px;
+    }
+    .product-box p {
+      color: #555;
+      margin-top: 10px;
+      font-size: 1rem;
+    }
+    .price {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #d32f2f;
+      margin-top: 15px;
+    }
+    .feature-list {
+      text-align: left;
+      margin-top: 15px;
+      font-size: 0.9rem;
+      color: #333;
+    }
+    .feature-list li {
+      margin-bottom: 8px;
+    }
+    .accordion {
+      background-color: #4ba4d8;
+      color: white;
+      cursor: pointer;
+      padding: 10px;
+      width: 100%;
+      text-align: left;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      margin-top: 10px;
+    }
+    .accordion:hover {
+      background-color: #357ab7;
+    }
+    .panel {
+      padding: 10px;
+      background-color: #f4f4f4;
+      border-radius: 5px;
+      margin-top: 10px;
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="menu-header">
+    <a href="página2.html">Menu</a>
+    <a href="correo.html">Contáctenos</a>
+  </div>
+
+  <div class="main-container">
+    <div class="product-box">
+      <img src="1hp.jpg" alt="HP LaserJet Pro MFP M428fdw">
+      <h3>HP LaserJet Pro MFP M428fdw</h3>
+      <p>Multifunción monocromo diseñada para oficinas de ritmo acelerado.</p>
+      <div class="price">$450 - $520 USD</div>
+      <button class="accordion">Características</button>
+      <div class="panel">
+        <ul class="feature-list">
+          <li><strong>Funciones:</strong> Imprimir, copiar, escanear y enviar fax.</li>
+          <li><strong>Velocidad:</strong> Hasta 40 ppm.</li>
+          <li><strong>Conectividad:</strong> Wi-Fi, Ethernet, USB.</li>
+          <li><strong>Seguridad:</strong> HP Wolf Security integrada.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="product-box">
+      <img src="2hp.jpg" alt="HP OfficeJet Pro 9025e">
+      <h3>HP OfficeJet Pro 9025e</h3>
+      <p>Impresora todo-en-uno para negocios modernos que buscan eficiencia.</p>
+      <div class="price">$320 - $390 USD</div>
+      <button class="accordion">Características</button>
+      <div class="panel">
+        <ul class="feature-list">
+          <li><strong>Funciones:</strong> Imprimir, escanear, copiar y enviar fax.</li>
+          <li><strong>Velocidad:</strong> Hasta 24 ppm.</li>
+          <li><strong>Conectividad:</strong> Wi-Fi, Ethernet, USB, HP Smart App.</li>
+          <li><strong>ADF:</strong> 35 hojas de escaneo automático a doble cara.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="product-box">
+      <img src="3hp.jpg" alt="HP ENVY Inspire 7955e">
+      <h3>HP ENVY Inspire 7955e</h3>
+      <p>Impresora familiar para fotos y tareas diarias de alta calidad.</p>
+      <div class="price">$200 - $250 USD</div>
+      <button class="accordion">Características</button>
+      <div class="panel">
+        <ul class="feature-list">
+          <li><strong>Funciones:</strong> Imprimir, copiar y escanear.</li>
+          <li><strong>Impresión:</strong> Fotos a color de alta resolución.</li>
+          <li><strong>Conectividad:</strong> Wi-Fi, Bluetooth, USB.</li>
+          <li><strong>Compatibilidad:</strong> HP Instant Ink habilitado.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="product-box">
+      <img src="4hp.png" alt="HP Neverstop Laser 1001nw">
+      <h3>HP Neverstop Laser 1001nw</h3>
+      <p>Primera impresora láser sin cartuchos, ideal para grandes volúmenes.</p>
+      <div class="price">$250 - $300 USD</div>
+      <button class="accordion">Características</button>
+      <div class="panel">
+        <ul class="feature-list">
+          <li><strong>Funciones:</strong> Solo impresión monocromo.</li>
+          <li><strong>Velocidad:</strong> Hasta 21 ppm.</li>
+          <li><strong>Conectividad:</strong> Wi-Fi Direct, Ethernet, USB.</li>
+          <li><strong>Tóner:</strong> Recargable en segundos con kit de recarga HP.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>

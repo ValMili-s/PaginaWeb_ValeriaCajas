@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Catálogo de Discos ADATA</title>
+  <link rel="stylesheet" href="logotipo.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f0f8ff;
+    }
+    .menu-header {
+      background-color: #004080;
+      padding: 12px;
+      text-align: center;
+    }
+    .menu-header a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    .menu-header a:hover {
+      text-decoration: underline;
+    }
+    header {
+      padding: 40px 0 20px;
+      text-align: center;
+      font-size: 2.2rem;
+      color: #004080;
+    }
+    .catalog {
+      width: 90%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding-bottom: 50px;
+    }
+    .product {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      display: flex;
+      overflow: hidden;
+      transition: box-shadow 0.3s;
+    }
+    .product:hover {
+      box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    }
+    .product img {
+      width: 200px;
+      object-fit: cover;
+      background: #e6f0ff;
+    }
+    .info {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex: 1;
+    }
+    .info h2 {
+      margin: 0;
+      color: #003366;
+      font-size: 1.6rem;
+    }
+    .info p {
+      margin: 10px 0;
+      color: #555;
+    }
+    .info .price {
+      color: #0066cc;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+    .btn-more {
+      align-self: flex-start;
+      background: #0066cc;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      margin-top: 15px;
+      cursor: pointer;
+      transition: background 0.3s;
+      border-radius: 5px;
+    }
+    .btn-more:hover {
+      background: #004080;
+    }
+    .details {
+      display: none;
+      padding: 15px 20px;
+      background: #e6f0ff;
+      color: #333;
+      border-top: 1px solid #b3d1ff;
+    }
+    .details ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    .details ul li {
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="menu-header">
+  <a href="página2.html">Menú</a>
+  <a href="correo.html">Contáctenos</a>
+</div>
+
+<header>Catálogo de Discos Duros ADATA</header>
+
+<div class="catalog">
+
+  <div class="product">
+    <img src="1a.webp" alt="ADATA SU650 240GB">
+    <div class="info">
+      <h2>ADATA SU650 240GB</h2>
+      <p>SSD confiable para actualizar tu laptop o PC de escritorio.</p>
+      <div class="price">$18 - $28 USD</div>
+      <button class="btn-more" onclick="toggleDetails(this)">Ver más</button>
+      <div class="details">
+        <ul>
+          <li>Velocidad de lectura de hasta 520 MB/s</li>
+          <li>Resistente a impactos y vibraciones</li>
+          <li>Formato 2.5 pulgadas SATA</li>
+          <li>Ideal para uso diario</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <img src="2a.jpg" alt="ADATA XPG SX8200 Pro 512GB">
+    <div class="info">
+      <h2>ADATA XPG SX8200 Pro 512GB</h2>
+      <p>Rendimiento excepcional para gaming y tareas pesadas.</p>
+      <div class="price">$50 - $65 USD</div>
+      <button class="btn-more" onclick="toggleDetails(this)">Ver más</button>
+      <div class="details">
+        <ul>
+          <li>Lectura de hasta 3500 MB/s</li>
+          <li>Formato M.2 2280 NVMe</li>
+          <li>Disipador de calor incluido</li>
+          <li>Excelente durabilidad y velocidad</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <img src="3a.jpg" alt="ADATA SE800 1TB Portable SSD">
+    <div class="info">
+      <h2>ADATA SE800 1TB Portable SSD</h2>
+      <p>SSD externo ultrarrápido y resistente para llevar tus datos a todas partes.</p>
+      <div class="price">$120 - $140 USD</div>
+      <button class="btn-more" onclick="toggleDetails(this)">Ver más</button>
+      <div class="details">
+        <ul>
+          <li>Velocidad de hasta 1000 MB/s</li>
+          <li>Resistente al agua, polvo y golpes (IP68)</li>
+          <li>Conexión USB 3.2 Gen 2 Tipo-C</li>
+          <li>Diseño compacto y elegante</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="product">
+    <img src="4a.png" alt="ADATA XPG GAMMIX S70 2TB PCIe 4.0">
+    <div class="info">
+      <h2>ADATA XPG GAMMIX S70 2TB PCIe 4.0</h2>
+      <p>Potente SSD NVMe para los entusiastas del rendimiento extremo.</p>
+      <div class="price">$180 - $220 USD</div>
+      <button class="btn-more" onclick="toggleDetails(this)">Ver más</button>
+      <div class="details">
+        <ul>
+          <li>Lectura de hasta 7400 MB/s</li>
+          <li>PCIe 4.0 x4, NVMe 1.4</li>
+          <li>Disipador de calor de aluminio</li>
+          <li>Alta resistencia para gaming y estaciones de trabajo</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  function toggleDetails(button) {
+    var details = button.nextElementSibling;
+    if (details.style.display === "block") {
+      details.style.display = "none";
+      button.innerText = "Ver más";
+    } else {
+      details.style.display = "block";
+      button.innerText = "Ver menos";
+    }
+  }
+</script>
+
+</body>
+</html>
